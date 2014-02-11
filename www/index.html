@@ -24,16 +24,51 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/themes/UoPMobileApp.min.css" />
+		<link rel="stylesheet" href="css/UoP-App.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css" />
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+		<!-- Link Font Awesome -->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <title>UoP</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <!-- Start of first page I -->
+		<div data-role="page" id="page1">
+			<!-- Header -->
+			<div data-role="header">
+				<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+				<h1>UoP:App</h1>
+
+			</div>
+			<!-- /header -->
+			<!-- Content    -->
+			<div data-role="content">
+				<div class="ui-grid-c">
+					<div class="ui-block-a"><i class="fa fa-desktop fa-3x fa-align-center"></i><br />Free PC Finder</div>
+					<div class="ui-block-b"><i class="fa fa-info-circle fa-3x fa-align-center"></i><br />Useful Info</div>
+					<div class="ui-block-c"><i class="fa fa-bell fa-3x fa-align-center"></i><br />Cwk Reminders</div>
+					<div class="ui-block-d"><i class="fa fa-map-marker fa-3x fa-align-center"></i><br />Interactive Maps</div>
+					<div class="ui-block-a">&nbsp;</div>
+					<div class="ui-block-b">&nbsp;</div>
+					<div class="ui-block-c">&nbsp;</div>
+					<div class="ui-block-d">&nbsp;</div>
+					<div class="ui-block-a"><i class="fa fa-clock-o fa-3x"></i><br />Bus Times</div>
+					<div class="ui-block-b"><i class="fa fa-calendar fa-3x"></i><br />My Timetable</div>
+					<div class="ui-block-c"><i class="fa fa-phone-square fa-3x"></i><br />Uni Directory</div>
+					<div class="ui-block-d"><i class="fa fa-building-o fa-3x"></i><br />Room Availability</div>
+				</div>
+			</div>
+			<!-- /content -->
+			
+		</div>
+		<!-- /page -->
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
